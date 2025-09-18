@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Alemu Desu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Alemu Desu</a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-3" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="contact.html" class="btn-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container services">
+      <h1 class="reveal">Services</h1>
+      <div class="grid reveal-grid">
+        <article class="service-card">
+          <h3>Website Development</h3>
+          <p>Static & dynamic websites, performance-focused.</p>
+          <button class="detail-btn" data-service="webdev">Read more</button>
+        </article>
+
+        <article class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Wireframes, prototypes, and polished interfaces.</p>
+          <button class="detail-btn" data-service="uiux">Read more</button>
+        </article>
+
+        <article class="service-card">
+          <h3>Deployment & DevOps</h3>
+          <p>Netlify, Vercel, GitHub Pages, CI/CD basics.</p>
+          <button class="detail-btn" data-service="deploy">Read more</button>
+        </article>
+        <article class="service-card">
+          <h3>AI and Machine learning Research</h3>
+          <p>NLP, Digital image processing and fine-tuning LLMs</p>
+          <button class="detail-btn" data-service="deploy">Read more</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-3"></span> Alemu Desu</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
